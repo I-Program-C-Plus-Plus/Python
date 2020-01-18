@@ -1,13 +1,21 @@
 import math
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
+class Factorial:
+
+    def __init__(self):
+        None
+
+    def fac(self,num):
+        if num == 0:
+            return 1
+
+        else:
+            return num * self.fac(num-1)
 
 
-n = int(input("Input a number to compute the factiorial : "))
-print(factorial(n))
+while True:
+    enter = (int(input("Enter a number to find factorial of: ")))
+    result = Factorial()
+    print(result.fac(enter))
 
 """
 Method 2:
