@@ -109,7 +109,7 @@ def main():
 
     else:
         while True:
-            k = raw_input("\nWhat is ")
+            k = raw_input("\nWhat is ")        
             if k == 'quit':
                 break
             result(k)
